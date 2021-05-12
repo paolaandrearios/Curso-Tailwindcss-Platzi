@@ -1,0 +1,55 @@
+@tailwind base;
+
+@tailwind components;
+
+
+  .alert {
+    @apply py-2 px-4 mt-5 ml-5 rounded;
+  }
+  .alert-default {
+    @apply bg-gray-100 text-gray-700 border border-gray-400;
+  }
+  .alert-danger {
+    @apply bg-red-100 text-red-700 border border-red-400;
+  }
+  .alert-warning {
+    @apply bg-orange-100 text-orange-700 border border-orange-400;
+  }
+  .alert-info {
+    @apply bg-blue-100 text-blue-700 border border-blue-400;
+  }
+  
+  
+@tailwind utilities;
+
+
+@responsive {
+  .rotate-45 {
+    transform: rotate(45deg);
+  }
+}
+
+@variants hover {
+  .zoom {
+    transform: scale(2);
+    background: purple;
+  }
+}
+
+/* .responsive\.rotate-45 {
+    transform: rotate(45deg);
+  }
+
+.hover\.zoom {
+    transform: scale(2);
+  } */
+
+  h1 {
+    @apply text-3xl text-green-700 font-semibold; 
+  }
+  h2 {
+    @apply text-2xl text-green-400 font-semibold; 
+  }
+  h3 {
+    @apply text-xl text-yellow-700 font-semibold; 
+  }
